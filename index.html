@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="text">Text Decorator</div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="form-active">
+          <div class="row">
+            <div class="col">
+              <div class="lable">Preview text</div>
+              <textarea
+                name="pre-text"
+                id="pre-text"
+                rows="14"
+                readonly
+              ></textarea>
+              <div class="btn-active">
+                <button class="btn-copy">Copy Text</button>
+                <button class="btn-copy-link">Copy Link to Text</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="lable">History</div>
+              <div id="history"></div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="multiple_line" /> Multiple Line
+        </div>
+
+        <div class="form-input">
+          <div class="lable">Input text</div>
+          <textarea
+            name="input-text"
+            id="input-text"
+            class="input-text"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="select-text">
+          <div class="row">
+            <div class="col">
+              <div class="lable">Font</div>
+              <select name="font" id="font"></select>
+            </div>
+            <div class="col">
+              <div class="lable">Text decorations</div>
+              <select name="text-decorations" id="decoration">
+                <option value="0">❤️️🧡💛💜💙</option>
+                <option value="1">*•.¸♡</option>
+                <option value="2">(¯`◕‿◕´¯) ♫ ♪ ♫</option>
+                <option value="3">★·.·´¯`·.·★</option>
+                <option value="4">✿◉●•◦</option>
+                <option value="5">☆☆╮</option>
+                <option value="6">╚»★«╝</option>
+                <option value="7">💞💘💖</option>
+                <option value="8">(-_-)</option>
+                <option value="9">•♬•♫•.</option>
+                <option value="10">♫♪♩·.¸¸.·</option>
+                <option value="11">★·.·´¯`·.·★</option>
+                <option value="12">➷➷➷➷➷</option>
+                <option value="13">.:**:.☆*.:｡.✿</option>
+                <option value="14">°¤*(¯´★`¯)*¤°•.</option>
+                <option value="15">•._.•´¯)</option>
+                <option value="16">.o0×X×0o.</option>
+                <option value="17">°¤*(¯´★`¯)*¤°•.</option>
+                <option value="18">¸¸♫·¯·♪¸¸♩·¯·♬¸¸</option>
+                <option value="19">¤(_¸.✭☆´¯) ¤</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="show-decorations">
+            <div class="before">
+              <input id="beforeChecked" type="checkbox" /> Show decorections
+              before text
+            </div>
+            <div class="after">
+              <input id="afterChecked" type="checkbox" /> Show decorections
+              after text
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</html>
